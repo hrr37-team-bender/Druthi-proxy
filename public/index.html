@@ -3,20 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <title>FEC Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3002/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
   <body>
-    <div id="ImageCarousel"></div>
+    <div class="product_details">
+      <div id="ImageCarousel"></div>
+      <div id="ProductDetails"></div>
+    </div>
+    <div id="Reviews"></div>
       <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="http://localhost:3001/bundle.js"></script>
+    <script src="http://localhost:3002/bundle.js"></script>
+    <script src="http://localhost:3003/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       ReactDOM.render(
         React.createElement(ImageCarousel),
         document.getElementById('ImageCarousel')
       );
+      ReactDOM.render(
+        React.createElement(ProductDetails),
+        document.getElementById('ProductDetails')
+      );
+      ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
+      );
+
     </script>
   </body>
 </html>
