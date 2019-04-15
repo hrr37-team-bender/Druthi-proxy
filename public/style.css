@@ -1,0 +1,70 @@
+.product_details_and_carousel{
+  display:flex;
+  height:100%
+}
+#ProductDetails{
+  margin:8% -66% 0% 0%;
+}
+.zipcode_and_details{
+  display:flex;
+  flex-flow: column;
+}
+.app{
+  align-self: flex-end;
+}
+.reviews_and_faqs{
+  display:flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.full_project_container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 9%;
+  margin-right: 10%;
+  background-color: white;
+  align-content : flex-start;
+  min-height: 1200px;
+  -webkit-box-shadow: -1px 4px 20px 0px #777;
+}
+
+body{
+  background-color: #eeeeee !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#Faqs{
+  margin-left: 5%;
+  width: 58%;
+}
+
+#Reviews{
+  width:29%;
+  margin-left: 5%;
+}
+
+.deepfryd_logo{
+  font-size: 48px;
+  font-weight: 700;
+  color:#ee4a50;
+  margin-left: 19px;
+  margin-top: 2%;
+}
+
+.navbar{
+  background-color:#ca2f35;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 3px;
+}
+
+
+
